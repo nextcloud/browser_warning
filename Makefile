@@ -9,7 +9,7 @@ source_package_name=$(source_build_directory)/$(app_name)
 appstore_build_directory=$(CURDIR)/build/artifacts/appstore
 appstore_package_name=$(appstore_build_directory)/$(app_name)
 
-all: dev-setup lint build-js-production test
+all: dev-setup lint build-js-production
 
 # Dev env management
 dev-setup: clean clean-dev npm-init
@@ -45,7 +45,7 @@ clean:
 clean-dev:
 	rm -rf node_modules
 
-# Builds the source package for the app store, ignores php and js tests
+# Builds the source package for the app store
 appstore:
 	rm -rf $(appstore_build_directory)
 	mkdir -p $(appstore_build_directory)
