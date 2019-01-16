@@ -29,7 +29,7 @@
 const uploadLimit = size => t(
 	'uploadlimits_warning',
 	'Because you are using an outdated browser, your won\'t be able to upload files bigger than {maxsize}.',
-	{ maxsize: OC.Util.humanFileSize(2 * 1024 * 1024) }
+	{ maxsize: OC.Util.humanFileSize(size) }
 )
 
 /**
