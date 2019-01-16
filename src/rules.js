@@ -20,17 +20,37 @@
  *
  */
 
+/**
+ * Generate an upload limit message based on the provided max size
+ *
+ * @param {int} size The upload limit size
+ * @returns {string}
+ */
+const uploadLimit = size => t(
+	'uploadlimits_warning',
+	'Because you are using an outdated browser, your won\'t be able to upload files bigger than {maxsize}.',
+	{ maxsize: OC.Util.humanFileSize(2 * 1024 * 1024) }
+)
+
+/**
+ * Use the result of the ua-parser lib to create your checks
+ * Then output your warning here.
+ * Only one warning per type will be displayed
+ */
 export default {
-	'32bit' : {
+	'32bit': {
 		rule: ua => ['amd64', 'arm64'].indexOf(ua.getCPU().architecture) === -1,
-		limit: 2 * 1024 * 1024 * 1024
+		msg: uploadLimit(2 * 1024 * 1024 * 1024),
+		type: 'uploadlimit'
 	},
-	'IE6 - IE8' : {
+	'IE6 - IE8': {
 		rule: ua => ua.getBrowser().name === 'IE' && ['6', '7', '8'].indexOf(ua.getBrowser().major) > -1,
-		limit: 2 * 1024 * 1024 * 1024
+		msg: uploadLimit(2 * 1024 * 1024 * 1024),
+		type: 'uploadlimit'
 	},
-	'IE9 - IE11' : {
+	'IE9 - IE11': {
 		rule: ua => ua.getBrowser().name === 'IE' && ['9', '10', '11'].indexOf(ua.getBrowser().major) > -1,
-		limit: 4 * 1024 * 1024 * 1024
-	},
+		msg: uploadLimit(4 * 1024 * 1024 * 1024),
+		type: 'uploadlimit'
+	}
 }

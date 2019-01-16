@@ -1,16 +1,16 @@
 <?xml version="1.0"?>
 <info xmlns:xsi= "http://www.w3.org/2001/XMLSchema-instance"
       xsi:noNamespaceSchemaLocation="https://apps.nextcloud.com/schema/apps/info.xsd">
-    <id>uploadlimits_warning</id>
-    <name>Upload limits warning</name>
-    <summary>Warning on unsupported file size</summary>
-    <description>This app will show a warning on specific conditions if the browser does not support the size of the uploaded file</description>
+    <id>browser_warning</id>
+    <name>Browser warning</name>
+    <summary>Display a specific warning on log-in page</summary>
+    <description>This app will show a warning on specific browser conditions on the log-in page</description>
     <version>0.1.0</version>
     <licence>agpl</licence>
     <author mail="skjnldsv@protonmail.com">John Molakvoæ</author>
-    <namespace>UploadlimitsWarning</namespace>
+    <namespace>BrowserWarning</namespace>
     <category>tools</category>
-    <bugs>https://github.com/skjnldsv/uploadlimits_warning</bugs>
+    <bugs>https://github.com/skjnldsv/browser_warning</bugs>
     <dependencies>
         <nextcloud min-version="14" max-version="16"/>
     </dependencies>

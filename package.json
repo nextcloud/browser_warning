@@ -1,28 +1,42 @@
 {
-  "name": "uploadlimits_warning",
+  "name": "browser_warning",
   "version": "0.1.0",
-  "description": "This app will show a warning on specific conditions if the browser does not support the size of the uploaded file",
+  "description": "This app will show a warning on specific browser conditions on the log-in page",
   "main": "index.js",
   "scripts": {
+    "dev": "webpack --config webpack.dev.js",
+    "watch": "webpack --progress --watch --config webpack.dev.js",
     "build": "webpack --progress --hide-modules --config webpack.prod.js",
-    "dev": "webpack --progress --watch --config webpack.dev.js"
+    "lint": "eslint --ext .js,.vue src",
+    "lint:fix": "eslint --ext .js,.vue src --fix"
   },
   "keywords": [],
   "author": "John Molakvoæ <skjnldsv@protonmail.com>",
   "license": "AGPL-3.0-or-later",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/skjnldsv/uploadlimits_warning.git"
+    "url": "git+https://github.com/skjnldsv/browser_warning.git"
+  },
+  "engines": {
+    "node": ">=10.0.0"
   },
   "bugs": {
-    "url": "https://github.com/skjnldsv/uploadlimits_warning/issues"
+    "url": "https://github.com/skjnldsv/browser_warning/issues"
   },
-  "homepage": "https://github.com/skjnldsv/uploadlimits_warning#readme",
+  "homepage": "https://github.com/skjnldsv/browser_warning#readme",
   "devDependencies": {
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.2.2",
     "@babel/preset-env": "^7.2.3",
     "babel-loader": "^8.0.5",
+    "eslint": "^5.12.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-loader": "^2.1.1",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "eslint-plugin-vue": "^5.1.0",
     "webpack": "^4.28.4",
     "webpack-cli": "^3.2.1",
     "webpack-merge": "^4.2.1"

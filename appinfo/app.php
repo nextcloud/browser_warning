@@ -21,13 +21,13 @@
  *
  */
 
-namespace OCA\UploadlimitsWarning\AppInfo;
+namespace OCA\BrowserWarning\AppInfo;
 
 $request = \OC::$server->getRequest();
 
 if (isset($request->server['REQUEST_URI'])) {
     $url = $request->server['REQUEST_URI'];
-    if (preg_match('%/apps/files(/.*)?%', $url) || preg_match('%/s/(/.*)?%', $url)) {
-        \OCP\Util::addScript('uploadlimits_warning', 'main');
+    if (preg_match('%/login$%m', $url)) {
+        \OCP\Util::addScript('browser_warning', 'main');
     }
 }

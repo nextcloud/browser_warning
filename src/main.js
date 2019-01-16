@@ -26,29 +26,27 @@ import UAParser from 'ua-parser-js'
 import rules from './rules'
 
 const userAgentData = new UAParser(navigator.userAgent)
+const shownTypes = []
 
 // Matching rules
-Object.values(rules).some(({rule, limit}, index) => {
+Object.values(rules).forEach(({ rule, msg, type }, index) => {
 	if (rule(userAgentData)) {
-		console.debug('Upload limit detected:', Object.keys(rules)[index]);
 
-		// register listener
-		document.getElementById('file_upload_start').addEventListener('input', event => {
-			if (event && event.target && event.target.files) {
-				// checking files
-				[...event.target.files].forEach(file => {
-					if (file.size > limit) {
-						// warn user
-						OC.Notification.showTemporary(t('core', 'One of the file you uploaded is too big for your browser (max {maxsize}).', {
-							maxsize: OC.Util.humanFileSize(limit)
-						}))
-						// stop upload
-						event.stopPropagation();
-					}
-				})
-			}
-		})
+		// make sure we only display one warning per type
+		if (shownTypes.indexOf(type) === -1) {
+			console.debug('Matching rule detected:', Object.keys(rules)[index])
 
-		return true
+			// insert warning
+			const submit = document.getElementById('submit-wrapper')
+			const warning = '<p class="warning">' + msg + '</p>'
+			submit.insertAdjacentHTML('afterend', warning)
+
+			// save used type
+			shownTypes.push(type)
+
+		// rule type already used
+		} else {
+			console.debug('Matching rule detected but ignored:', Object.keys(rules)[index])
+		}
 	}
 })
