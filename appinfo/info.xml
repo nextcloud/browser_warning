@@ -10,7 +10,7 @@
     <author mail="skjnldsv@protonmail.com">John Molakvoæ</author>
     <namespace>BrowserWarning</namespace>
     <category>tools</category>
-    <bugs>https://github.com/skjnldsv/browser_warning</bugs>
+    <bugs>https://github.com/nextcloud/browser_warning</bugs>
     <dependencies>
         <nextcloud min-version="14" max-version="16"/>
     </dependencies>
