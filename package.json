@@ -15,15 +15,15 @@
   "license": "AGPL-3.0-or-later",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/skjnldsv/browser_warning.git"
+    "url": "git+https://github.com/nextcloud/browser_warning.git"
   },
   "engines": {
     "node": ">=10.0.0"
   },
   "bugs": {
-    "url": "https://github.com/skjnldsv/browser_warning/issues"
+    "url": "https://github.com/nextcloud/browser_warning/issues"
   },
-  "homepage": "https://github.com/skjnldsv/browser_warning#readme",
+  "homepage": "https://github.com/nextcloud/browser_warning#readme",
   "devDependencies": {
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.2.2",
