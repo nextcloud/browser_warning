@@ -20,7 +20,7 @@
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  *
  */
-import '@babel/polyfill'
+import '@babel/polyfill/noConflict'
 
 import UAParser from 'ua-parser-js'
 import rules from './rules'
