@@ -39,8 +39,8 @@ lint-fix:
 
 # Cleaning
 clean:
-	rm -f js/main.js
-	rm -f js/main.js.map
+	rm -f js/browser_warning.js
+	rm -f js/browser_warning.js.map
 
 clean-dev:
 	rm -rf node_modules
