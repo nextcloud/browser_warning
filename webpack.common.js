@@ -6,8 +6,9 @@ module.exports = {
 		main: path.join(__dirname, 'src/main.js')
 	},
 	output: {
-		filename: '[name].js',
-		path: path.resolve(__dirname, 'js')
+		path: path.resolve(__dirname, './js'),
+		publicPath: '/js/',
+		filename: 'browser_warning.js'
 	},
 	module: {
 		rules: [
