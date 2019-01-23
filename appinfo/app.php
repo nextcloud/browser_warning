@@ -28,6 +28,6 @@ $request = \OC::$server->getRequest();
 if (isset($request->server['REQUEST_URI'])) {
     $url = $request->server['REQUEST_URI'];
     if (preg_match('%/login(\?.+)?$%m', $url)) {
-        \OCP\Util::addScript('browser_warning', 'main');
+        \OCP\Util::addScript('browser_warning', 'browser_warning');
     }
 }
