@@ -42,7 +42,6 @@
     "webpack-merge": "^4.2.1"
   },
   "dependencies": {
-    "@babel/polyfill": "^7.2.5",
     "ua-parser-js": "^0.7.19"
   }
 }
