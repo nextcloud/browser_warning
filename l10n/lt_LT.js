@@ -2,7 +2,7 @@ OC.L10N.register(
     "browser_warning",
     {
     "Browser warning" : "Naršyklės įspėjimas",
-    "Display a specific warning on log-in page" : "Rodyti prisijungimo puslapyje tam tikrą įspėjimą",
+    "Display a specific warning on log-in page" : "Rodyti tam tikrą įspėjimą prisijungimo puslapyje",
     "This app will show a warning on specific browser conditions on the log-in page" : "Ši programėlė prisijungimo puslapyje, esant tam tikroms sąlygoms, rodys įspėjimą",
     "Because you are using an outdated browser, your won't be able to upload files bigger than {maxsize}." : "Kadangi naudojate pasenusią naršyklę, negalėsite įkelti failų, kurie didesni nei {maxsize}."
 },
