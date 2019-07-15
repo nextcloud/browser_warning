@@ -38,7 +38,7 @@
     "eslint-plugin-standard": "^4.0.0",
     "eslint-plugin-vue": "^5.1.0",
     "webpack": "^4.28.4",
-    "webpack-cli": "^3.2.1",
+    "webpack-cli": "^3.3.6",
     "webpack-merge": "^4.2.1"
   },
   "dependencies": {
