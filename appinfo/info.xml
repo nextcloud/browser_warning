@@ -4,11 +4,8 @@
     <id>browser_warning</id>
     <name>Browser warning</name>
     <summary>Display a specific warning on log-in page</summary>
-    <description>This app will show a warning on specific browser conditions on the log-in page
-
-See inside `/src/rules.js` to see what rules exists and how you can add some.
-      </description>
-      <screenshot>https://user-images.githubusercontent.com/14975046/51266875-ab4ce480-19bc-11e9-83eb-d6cf0a05cadf.png</screenshot>
+    <description>This app will show a warning on specific browser conditions on the log-in page</description>
+    <screenshot>https://user-images.githubusercontent.com/14975046/51266875-ab4ce480-19bc-11e9-83eb-d6cf0a05cadf.png</screenshot>
     <version>0.1.0</version>
     <licence>agpl</licence>
     <author mail="skjnldsv@protonmail.com">John Molakvoæ</author>
