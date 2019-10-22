@@ -1,17 +1,23 @@
 const path = require('path');
-const webpack = require('webpack');
+
+const packageJson = require('./package.json')
+const appName = packageJson.name
 
 module.exports = {
-	entry: {
-		main: path.join(__dirname, 'src/main.js')
-	},
+	entry: path.join(__dirname, 'src', 'main.js'),
 	output: {
 		path: path.resolve(__dirname, './js'),
 		publicPath: '/js/',
-		filename: 'browser_warning.js'
+		filename: `${appName}.js`
 	},
 	module: {
 		rules: [
+			{
+				test: /\.js$/,
+				use: 'eslint-loader',
+				exclude: /node_modules/,
+				enforce: 'pre'
+			},
 			{
 				test: /\.js$/,
 				loader: 'babel-loader',
@@ -20,7 +26,7 @@ module.exports = {
 		]
 	},
 	resolve: {
-		extensions: ['.js'],
+		extensions: ['*', '.js'],
 		symlinks: false
 	}
 };
