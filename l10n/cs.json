@@ -1,5 +1,5 @@
 { "translations": {
-    "Browser warning" : "Varování prohlížeče",
+    "Browser warning" : "Varování ohledně prohlížeče",
     "Display a specific warning on log-in page" : "Zobrazit konkrétní varování na přihlašovací stránce",
     "This app will show a warning on specific browser conditions on the log-in page" : "Tato aplikace zobrazí na přihlašovací stránce varování na konkrétní podmínky prohlížeče",
     "Because you are using an outdated browser, your won't be able to upload files bigger than {maxsize}." : "Používáte zastaralý prohlížeč, který neumožňuje nahrávat soubory větší než {maxsize}."
