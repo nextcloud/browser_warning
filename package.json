@@ -28,15 +28,15 @@
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.8.6",
     "@babel/preset-env": "^7.8.6",
+    "@nextcloud/browserslist-config": "^1.0.0",
+    "@nextcloud/eslint-config": "^1.0.0",
+    "@nextcloud/eslint-plugin": "^1.1.0",
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.0.6",
-    "browserslist-config-nextcloud": "^0.1.0",
     "eslint": "^5.16.0",
-    "eslint-config-nextcloud": "0.1.1",
     "eslint-config-standard": "^12.0.0",
     "eslint-loader": "^3.0.3",
     "eslint-plugin-import": "^2.20.1",
-    "eslint-plugin-nextcloud": "^0.3.0",
     "eslint-plugin-node": "^10.0.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1",
@@ -49,6 +49,6 @@
     "ua-parser-js": "^0.7.21"
   },
   "browserslist": [
-    "extends browserslist-config-nextcloud"
+    "extends @nextcloud/browserslist-config"
   ]
 }

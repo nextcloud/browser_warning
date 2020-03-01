@@ -41,16 +41,16 @@ export default {
 	'32bit': {
 		rule: ua => ['amd64', 'arm64'].indexOf(ua.getCPU().architecture) === -1,
 		msg: uploadLimit(2 * 1024 * 1024 * 1024),
-		type: 'uploadlimit'
+		type: 'uploadlimit',
 	},
 	'IE6 - IE8': {
 		rule: ua => ua.getBrowser().name === 'IE' && ['6', '7', '8'].indexOf(ua.getBrowser().major) > -1,
 		msg: uploadLimit(2 * 1024 * 1024 * 1024),
-		type: 'uploadlimit'
+		type: 'uploadlimit',
 	},
 	'IE9 - IE11': {
 		rule: ua => ua.getBrowser().name === 'IE' && ['9', '10', '11'].indexOf(ua.getBrowser().major) > -1,
 		msg: uploadLimit(4 * 1024 * 1024 * 1024),
-		type: 'uploadlimit'
-	}
+		type: 'uploadlimit',
+	},
 }
