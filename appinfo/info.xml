@@ -13,6 +13,6 @@
     <category>tools</category>
     <bugs>https://github.com/nextcloud/browser_warning</bugs>
     <dependencies>
-        <nextcloud min-version="14" max-version="16"/>
+        <nextcloud min-version="16" max-version="18"/>
     </dependencies>
 </info>
