@@ -1,6 +1,6 @@
 {
   "name": "browser_warning",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "This app will show a warning on specific browser conditions on the log-in page",
   "main": "index.js",
   "scripts": {
