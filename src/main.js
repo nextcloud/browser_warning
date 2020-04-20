@@ -35,9 +35,16 @@ Object.values(rules).forEach(({ rule, msg, type }, index) => {
 			console.debug('Matching rule detected:', Object.keys(rules)[index])
 
 			// insert warning
-			const submit = document.getElementById('submit-wrapper')
 			const warning = '<p class="warning">' + msg + '</p>'
-			submit.insertAdjacentHTML('afterend', warning)
+
+			const submit = document.getElementById('submit-wrapper')
+			const saml = document.getElementById('saml-select-user-back-end')
+
+			if (submit) {
+				submit.insertAdjacentHTML('afterend', warning)
+			} else if (saml) {
+				saml.insertAdjacentHTML('afterend', warning)
+			}
 
 			// save used type
 			shownTypes.push(type)
