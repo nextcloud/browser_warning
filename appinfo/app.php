@@ -22,12 +22,20 @@
  */
 
 namespace OCA\BrowserWarning\AppInfo;
+use \OCP\Util;
 
 $request = \OC::$server->getRequest();
 
+const URLS = [
+    'user_saml' => '%/saml/selectUserBackEnd(\?.+)?$%m',
+    'login'     => '%/login(\?.+)?$%m'
+];
+
 if (isset($request->server['REQUEST_URI'])) {
     $url = $request->server['REQUEST_URI'];
-    if (preg_match('%/login(\?.+)?$%m', $url)) {
-        \OCP\Util::addScript('browser_warning', 'browser_warning');
+    foreach(URLS as $regex) {
+        if (preg_match($regex, $url)) {
+            Util::addScript('browser_warning', 'browser_warning');
+        }
     }
 }
