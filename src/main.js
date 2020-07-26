@@ -27,31 +27,39 @@ const userAgentData = new UAParser(navigator.userAgent)
 const shownTypes = []
 
 // Matching rules
-Object.values(rules).forEach(({ rule, msg, type }, index) => {
-	if (rule(userAgentData)) {
+const initBrowserCheck = function() {
+	console.debug('Browser warning check started')
 
-		// make sure we only display one warning per type
-		if (shownTypes.indexOf(type) === -1) {
-			console.debug('Matching rule detected:', Object.keys(rules)[index])
+	Object.values(rules).forEach(({ rule, msg, type }, index) => {
+		if (rule(userAgentData)) {
 
-			// insert warning
-			const warning = '<p class="warning">' + msg + '</p>'
+			// make sure we only display one warning per type
+			if (shownTypes.indexOf(type) === -1) {
+				console.debug('Matching rule detected:', Object.keys(rules)[index])
 
-			const submit = document.getElementById('submit-wrapper')
-			const saml = document.getElementById('saml-select-user-back-end')
+				// insert warning
+				const warning = '<p class="warning">' + msg + '</p>'
 
-			if (submit) {
-				submit.insertAdjacentHTML('afterend', warning)
-			} else if (saml) {
-				saml.insertAdjacentHTML('afterend', warning)
+				const submit = document.getElementById('submit-wrapper')
+				const saml = document.getElementById('saml-select-user-back-end')
+
+				if (submit) {
+					submit.insertAdjacentHTML('afterend', warning)
+				} else if (saml) {
+					saml.insertAdjacentHTML('afterend', warning)
+				}
+
+				// save used type
+				shownTypes.push(type)
+
+			// rule type already used
+			} else {
+				console.debug('Matching rule detected but ignored:', Object.keys(rules)[index])
 			}
-
-			// save used type
-			shownTypes.push(type)
-
-		// rule type already used
-		} else {
-			console.debug('Matching rule detected but ignored:', Object.keys(rules)[index])
 		}
-	}
-})
+	})
+
+	console.debug('Browser warning initialized')
+}
+
+window.addEventListener('DOMContentLoaded', initBrowserCheck)
