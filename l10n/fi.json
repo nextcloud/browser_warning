@@ -1,6 +1,7 @@
 { "translations": {
     "Browser warning" : "Selainvaroitus",
     "Display a specific warning on log-in page" : "Näytä tietty varoitus kirjautumissivulla",
-    "This app will show a warning on specific browser conditions on the log-in page" : "Tämä sovellus näyttää varoituksen selaimeen liittyvin ehdoin kirjautumissivulla"
+    "This app will show a warning on specific browser conditions on the log-in page" : "Tämä sovellus näyttää varoituksen selaimeen liittyvin ehdoin kirjautumissivulla",
+    "You are using an outdated browser and therefore won't be able to upload files larger than {maxsize}." : "Käytössäsi on vanhentunut selain, jonka vuoksi et pysty lähettää suurempia tiedostoja kuin {maxsize}."
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }
