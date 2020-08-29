@@ -2,7 +2,7 @@ OC.L10N.register(
     "browser_warning",
     {
     "Browser warning" : "Diwal furcher",
-    "Display a specific warning on log-in page" : "Diskouezhit ur gemenaden diwal resis war ar bajenn mont-tre",
+    "Display a specific warning on log-in page" : "Diskouezit ur gemenaden diwal resis war ar bajenn mont-tre",
     "This app will show a warning on specific browser conditions on the log-in page" : "Ar meziant a diskwello ur gemenaden diwal war ar bajenn mont-tre evit staoù resis ar furcher",
     "You are using an outdated browser and therefore won't be able to upload files larger than {maxsize}." : "Re ozh eo ar vrowser implijet, ne vo ket gouest da blkargañ restroù brasoc'h eget {maxsize}."
 },
