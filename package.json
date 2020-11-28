@@ -26,7 +26,7 @@
   "homepage": "https://github.com/nextcloud/browser_warning#readme",
   "devDependencies": {
     "@babel/cli": "^7.12.7",
-    "@babel/core": "^7.12.7",
+    "@babel/core": "^7.12.9",
     "@babel/preset-env": "^7.12.7",
     "@nextcloud/browserslist-config": "^1.0.0",
     "@nextcloud/eslint-config": "^2.2.0",
