@@ -46,7 +46,7 @@
     "webpack-merge": "^5.7.3"
   },
   "dependencies": {
-    "ua-parser-js": "^0.7.25"
+    "ua-parser-js": "^0.7.27"
   },
   "browserslist": [
     "extends @nextcloud/browserslist-config"
