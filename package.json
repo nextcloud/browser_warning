@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/nextcloud/browser_warning#readme",
   "devDependencies": {
-    "@babel/cli": "^7.13.16",
+    "@babel/cli": "^7.14.5",
     "@babel/core": "^7.13.16",
     "@babel/preset-env": "^7.13.15",
     "@nextcloud/browserslist-config": "^2.1.0",
