@@ -3,7 +3,7 @@
  *
  * @author John Molakvoæ <skjnldsv@protonmail.com>
  *
- * @license GNU AGPL version 3 or any later version
+ * @license AGPL-3.0-or-later
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License as
@@ -23,8 +23,8 @@
 /**
  * Generate an upload limit message based on the provided max size
  *
- * @param {int} size The upload limit size
- * @returns {string}
+ * @param {number} size The upload limit size
+ * @return {string}
  */
 const uploadLimit = size => t(
 	'browser_warning',
