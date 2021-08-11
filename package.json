@@ -1,14 +1,16 @@
 {
   "name": "browser_warning",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "description": "This app will show a warning on specific browser conditions on the log-in page",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack --config webpack.dev.js",
-    "watch": "webpack --progress --watch --config webpack.dev.js",
-    "build": "webpack --progress --config webpack.prod.js",
+		"build": "NODE_ENV=production webpack --progress --config webpack.js",
+		"dev": "NODE_ENV=development webpack --progress --config webpack.js",
+		"watch": "NODE_ENV=development webpack --progress --watch --config webpack.js",
     "lint": "eslint --ext .js,.vue src",
-    "lint:fix": "eslint --ext .js,.vue src --fix"
+		"lint:fix": "eslint --ext .js,.vue src --fix",
+		"stylelint": "stylelint src",
+		"stylelint:fix": "stylelint src --fix"
   },
   "keywords": [],
   "author": "John Molakvoæ <skjnldsv@protonmail.com>",
@@ -18,32 +20,19 @@
     "url": "git+https://github.com/nextcloud/browser_warning.git"
   },
   "engines": {
-    "node": ">=10.0.0"
+    "node": ">=14.0.0",
+    "npm": ">=7.0.0"
   },
   "bugs": {
     "url": "https://github.com/nextcloud/browser_warning/issues"
   },
   "homepage": "https://github.com/nextcloud/browser_warning#readme",
   "devDependencies": {
-    "@babel/cli": "^7.13.16",
-    "@babel/core": "^7.13.16",
-    "@babel/preset-env": "^7.13.15",
+    "@nextcloud/babel-config": "^1.0.0",
     "@nextcloud/browserslist-config": "^2.1.0",
-    "@nextcloud/eslint-config": "^2.2.0",
-    "@nextcloud/eslint-plugin": "^1.5.0",
-    "babel-eslint": "^10.1.0",
-    "babel-loader": "^8.2.2",
-    "eslint": "^6.8.0",
-    "eslint-config-standard": "^14.1.1",
-    "eslint-loader": "^4.0.2",
-    "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^4.3.1",
-    "eslint-plugin-standard": "^4.1.0",
-    "eslint-plugin-vue": "^6.2.2",
-    "webpack": "^4.46.0",
-    "webpack-cli": "^4.6.0",
-    "webpack-merge": "^5.7.3"
+    "@nextcloud/eslint-config": "^6.1.0",
+    "@nextcloud/stylelint-config": "^1.0.0-beta.0",
+    "@nextcloud/webpack-vue-config": "^4.1.0"
   },
   "dependencies": {
     "ua-parser-js": "^0.7.28"

@@ -6,13 +6,13 @@
     <summary>Display a specific warning on log-in page</summary>
     <description>This app will show a warning on specific browser conditions on the log-in page</description>
     <screenshot>https://user-images.githubusercontent.com/14975046/51266875-ab4ce480-19bc-11e9-83eb-d6cf0a05cadf.png</screenshot>
-    <version>0.2.0</version>
+    <version>1.0.0</version>
     <licence>agpl</licence>
     <author mail="skjnldsv@protonmail.com">John Molakvoæ</author>
     <namespace>BrowserWarning</namespace>
     <category>tools</category>
     <bugs>https://github.com/nextcloud/browser_warning</bugs>
     <dependencies>
-        <nextcloud min-version="17" max-version="19"/>
+        <nextcloud min-version="20" max-version="23"/>
     </dependencies>
 </info>
