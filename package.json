@@ -32,7 +32,7 @@
     "@nextcloud/webpack-vue-config": "^4.1.0"
   },
   "dependencies": {
-    "ua-parser-js": "^0.7.30"
+    "ua-parser-js": "^0.7.31"
   },
   "browserslist": [
     "extends @nextcloud/browserslist-config"
