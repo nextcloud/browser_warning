@@ -1,40 +1,40 @@
 {
-	"name": "browser_warning",
-	"version": "1.0.0",
-	"description": "This app will show a warning on specific browser conditions on the log-in page",
-	"main": "index.js",
-	"scripts": {
-		"build": "NODE_ENV=production webpack --progress --config webpack.js",
-		"dev": "NODE_ENV=development webpack --progress --config webpack.js",
-		"watch": "NODE_ENV=development webpack --progress --watch --config webpack.js",
-		"lint": "eslint --ext .js,.vue src",
-		"lint:fix": "eslint --ext .js,.vue src --fix"
-	},
-	"keywords": [],
-	"author": "John Molakvoæ <skjnldsv@protonmail.com>",
-	"license": "AGPL-3.0-or-later",
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/nextcloud/browser_warning.git"
-	},
-	"engines": {
-		"node": "^14.0.0",
-		"npm": "^7.0.0"
-	},
-	"bugs": {
-		"url": "https://github.com/nextcloud/browser_warning/issues"
-	},
-	"homepage": "https://github.com/nextcloud/browser_warning#readme",
-	"devDependencies": {
-		"@nextcloud/babel-config": "^1.0.0",
-		"@nextcloud/browserslist-config": "^2.2.0",
-		"@nextcloud/eslint-config": "^6.1.2",
-		"@nextcloud/webpack-vue-config": "^4.3.2"
-	},
-	"dependencies": {
-		"ua-parser-js": "^0.7.31"
-	},
-	"browserslist": [
-		"extends @nextcloud/browserslist-config"
-	]
+  "name": "browser_warning",
+  "version": "1.0.0",
+  "description": "This app will show a warning on specific browser conditions on the log-in page",
+  "main": "index.js",
+  "scripts": {
+    "build": "NODE_ENV=production webpack --progress --config webpack.js",
+    "dev": "NODE_ENV=development webpack --progress --config webpack.js",
+    "watch": "NODE_ENV=development webpack --progress --watch --config webpack.js",
+    "lint": "eslint --ext .js,.vue src",
+    "lint:fix": "eslint --ext .js,.vue src --fix"
+  },
+  "keywords": [],
+  "author": "John Molakvoæ <skjnldsv@protonmail.com>",
+  "license": "AGPL-3.0-or-later",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nextcloud/browser_warning.git"
+  },
+  "engines": {
+    "node": "^16.0.0",
+    "npm": "^7.0.0 || ^8.0.0"
+  },
+  "bugs": {
+    "url": "https://github.com/nextcloud/browser_warning/issues"
+  },
+  "homepage": "https://github.com/nextcloud/browser_warning#readme",
+  "devDependencies": {
+    "@nextcloud/babel-config": "^1.0.0",
+    "@nextcloud/browserslist-config": "^2.2.0",
+    "@nextcloud/eslint-config": "^6.1.2",
+    "@nextcloud/webpack-vue-config": "^4.3.2"
+  },
+  "dependencies": {
+    "ua-parser-js": "^0.7.31"
+  },
+  "browserslist": [
+    "extends @nextcloud/browserslist-config"
+  ]
 }
