@@ -27,7 +27,7 @@
   "homepage": "https://github.com/nextcloud/browser_warning#readme",
   "devDependencies": {
     "@nextcloud/babel-config": "^1.0.0",
-    "@nextcloud/browserslist-config": "^2.2.0",
+    "@nextcloud/browserslist-config": "^2.3.0",
     "@nextcloud/eslint-config": "^6.1.2",
     "@nextcloud/webpack-vue-config": "^4.3.2"
   },
