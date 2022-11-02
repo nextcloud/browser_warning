@@ -1,3 +1,6 @@
+:warning: Nextcloud 26 is shipping an outdated browser warning page.
+This app is therefore archived.
+
 # 🌍 Browser warning
 
 This app will show a warning on specific browser conditions on the log-in page
